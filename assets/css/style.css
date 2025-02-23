@@ -203,7 +203,7 @@ header .action {
   display: flex;
   align-items: center;
 }
-.hero .hero-cta {
+.hero-cta {
   min-width: 180px;
   line-height: 64px;
   background-color: var(--primary-color);
@@ -362,8 +362,14 @@ header .action {
   padding: 96px 0;
   background: #2e2100;
 }
-.feedback-item {
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 .feedback-item .avatar {
   width: 72px;
@@ -405,7 +411,7 @@ header .action {
   color: #ffffff;
   font-style: italic;
   font-size: 2.6rem;
-  line-height: 1, 53;
+  line-height: 1.53;
 }
 .feedback-item .info .dot.active {
   background: var(--primary-color);
